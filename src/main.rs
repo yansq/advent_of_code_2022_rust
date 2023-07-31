@@ -1,8 +1,10 @@
 mod day1;
 mod day2;
+mod day3;
 mod utils;
 
 fn main() {
     day1::calories_counting::count_calories();
     day2::rock_paper_scissors::calculate_score();
+    day3::rucksack_reorganization::result();
 }
