@@ -1,4 +1,5 @@
 use std::fs::File;
+use std::io::prelude::*;
 use std::io::{self, BufRead};
 use std::path::Path;
 
@@ -8,4 +9,12 @@ where
 {
     let file = File::open(filename)?;
     Ok(io::BufReader::new(file).lines())
+}
+
+pub fn read_bytes<P>(filename: P) -> io::Result<io::Bytes<io::BufReader<File>>>
+where
+    P: AsRef<Path>,
+{
+    let file = File::open(filename)?;
+    Ok(io::BufReader::new(file).bytes())
 }
