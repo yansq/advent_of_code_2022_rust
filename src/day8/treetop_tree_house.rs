@@ -17,8 +17,6 @@ pub fn count_tree() -> i32 {
 
     for i in 0..length {
         for j in 0..length {
-            println!("{}", vec2[i][j]);
-            println!("{:?}", dp_vec[i][j]);
             if vec2[i][j]
                 > dp_vec[i][j]
                     .0
@@ -68,6 +66,6 @@ mod tests {
 
     #[test]
     fn check_result() {
-        assert_eq!(count_tree(), 532);
+        assert_eq!(count_tree(), 1812);
     }
 }
