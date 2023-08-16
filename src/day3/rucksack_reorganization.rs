@@ -29,7 +29,6 @@ pub fn result() -> u32 {
         }
     }
 
-    println!("{}", priority_sum);
     priority_sum
 }
 

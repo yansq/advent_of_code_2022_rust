@@ -40,7 +40,6 @@ pub fn top_stacks() -> String {
     for stack in stacks {
         res.push(*stack.last().unwrap());
     }
-    println!("{res}");
     res
 }
 

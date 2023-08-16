@@ -26,7 +26,6 @@ pub fn count_pairs() -> u32 {
             }
         }
     }
-    println!("{}", num_of_pairs);
     num_of_pairs
 }
 

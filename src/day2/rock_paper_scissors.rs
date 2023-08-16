@@ -89,7 +89,6 @@ pub fn calculate_score() -> u32 {
             score += result.get_score();
         }
     }
-    println!("{}", score);
     score
 }
 

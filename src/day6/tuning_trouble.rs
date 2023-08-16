@@ -17,7 +17,6 @@ pub fn num_processed() -> i32 {
             if vector.len() < 4 {
                 vector.push(ch);
             } else if check_distinct(&vector) {
-                println!("{}", i);
                 return i as i32;
             } else {
                 vector.remove(0);

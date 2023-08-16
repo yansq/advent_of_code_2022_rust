@@ -15,7 +15,6 @@ pub fn count_calories() -> u32 {
         }
         most_calories = most_calories.max(current_calories);
     }
-    println!("{}", most_calories);
     most_calories
 }
 
