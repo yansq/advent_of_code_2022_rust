@@ -9,8 +9,7 @@ pub fn sum() -> i32 {
             if index > 221 {
                 break;
             }
-            let split_result = line.split_once(' ');
-            if let Some((_, value)) = split_result {
+            if let Some((_, value)) = line.split_once(' ') {
                 let value = value.parse::<i32>().unwrap();
                 vec[index + 1] = vec[index];
                 vec[index + 2] = vec[index] + value;
